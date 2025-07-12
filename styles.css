@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background: url('https://i.imgur.com/IdR7VKS.png') repeat;
+    background-size: 120px;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.carta {
+    background: #fff;
+    width: 90%;
+    max-width: 700px;
+    min-height: 95vh;
+    padding: 40px 25px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-family: satisfy, cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1.7;
+    margin: 15px 0;
+    color: #333;
+}
+
+li {
+    font-family: 'Satisfy', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1.7;
+    margin: 15px 0;
+    color: #333;
+}
+
+.fecha {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.firmas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.firmas div {
+    text-align: center;
+}
+
+.firmas hr {
+    border: none;
+    border-top: 1px solid #000;
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.titulo-imagen {
+    width: 100%;
+    max-width: 350%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px; /* evita que la carta toque los bordes del celular */
+    }
+
+    .carta {
+        padding: 25px 15px;
+        min-height: auto;
+        width: 100%;
+    }
+
+    .titulo-imagen {
+        width: 9%;
+        max-width: 280px;
+    }
+
+    p, li {
+        font-size: 1.5em;
+        line-height: 1.9;
+    }
+
+    .firmas {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .firmas hr {
+        width: 80px;
+    }
+
+    .fecha {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+}
