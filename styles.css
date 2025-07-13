@@ -1,122 +1,127 @@
+/* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-    height: 100%;
-    background-size: 120px;
-    font-family: 'Quicksand', sans-serif;
-    overflow-x: hidden;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
 }
+
 body {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
-
-.carta {
-    position:relative;
-    width: 90%;
-    max-width: 700px;
-    min-height: 95vh;
-    padding: 40px 25px;
-    border-radius: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+/* Fondo desenfocado */
 .carta::before {
-    content: "";
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: url('img/fondo.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    filter: blur(10px);
-    z-index: -1;
-    opacity: 0.5;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('img/fondo.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.5;
 }
 
+/* Carta principal */
+.carta {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  min-height: 95vh;
+  padding: 40px 25px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Imagen del título */
+.titulo-imagen {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+/* Texto */
 p {
-    font-family: satisfy, cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4em;
-    line-height: 1.7;
-    margin: 15px 0;
-    color: #333;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.4em;
+  line-height: 1.7;
+  margin: 15px 0;
+  color: #333;
 }
 
 li {
-    font-family: 'Satisfy', cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4em;
-    line-height: 1.7;
-    margin: 15px 0;
-    color: #333;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.4em;
+  line-height: 1.7;
+  margin: 15px 0;
+  color: #333;
+  text-align: left;
 }
 
+/* Fecha */
 .fecha {
-    margin-top: 30px;
-    font-style: italic;
+  margin-top: 30px;
+  font-style: italic;
 }
 
+/* Firmas */
 .firmas {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  gap: 20px;
 }
 
 .firmas div {
-    text-align: center;
+  text-align: center;
 }
 
 .firmas hr {
-    border: none;
-    border-top: 1px solid #000;
-    width: 120px;
-    margin-bottom: 5px;
+  border: none;
+  border-top: 1px solid #000;
+  width: 120px;
+  margin-bottom: 5px;
 }
 
-.titulo-imagen {
-    width: 100%;
-    max-width: 350%;
-    height: auto;
-    margin: 0 auto 20px auto;
-    display: block;
-}
-
+/* Responsive para celulares */
 @media screen and (max-width: 480px) {
-    .carta {
-        padding: 20px 15px;
-    }
+  .carta {
+    padding: 20px 15px;
+  }
 
-    .titulo-imagen {
-        width: 100;
-        max-width: 320;
-        margin-bottom: 20px
-    }
+  .titulo-imagen {
+    max-width: 100%;
+    width: 100%;
+  }
 
-    p, li {
-        font-size: 1.2em;
-    }
+  p, li {
+    font-size: 1.3em;
+  }
 
-    .firmas {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .firmas {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .firmas hr {
-        width: 100px;
-    }
+  .firmas hr {
+    width: 100px;
+  }
 }
+
 
