@@ -20,14 +20,13 @@ body {
 /* Fondo desenfocado */
 .carta::before {
   content: "";
-  position: fixed;
+  position: absolute
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: url('img/fondo.jpeg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   filter: blur(10px);
   z-index: -1;
   opacity: 0.5;
