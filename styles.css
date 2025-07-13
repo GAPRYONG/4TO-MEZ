@@ -95,38 +95,25 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        padding: 10px; /* evita que la carta toque los bordes del celular */
-    }
-
     .carta {
-        padding: 25px 15px;
-        min-height: auto;
-        width: 100%;
+        padding: 20px 15px;
     }
 
     .titulo-imagen {
-        width: 9%;
-        max-width: 280px;
+        width: 90%;
     }
 
     p, li {
-        font-size: 1.5em;
-        line-height: 1.9;
+        font-size: 1.2em;
     }
 
     .firmas {
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .firmas hr {
-        width: 80px;
-    }
-
-    .fecha {
-        font-size: 1.2em;
-        margin-top: 20px;
+        width: 100px;
     }
 }
+
