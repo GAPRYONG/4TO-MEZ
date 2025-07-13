@@ -18,6 +18,7 @@ body {
 
 
 .carta {
+    position:relative;
     width: 90%;
     max-width: 700px;
     min-height: 95vh;
@@ -32,10 +33,10 @@ body {
 .carta::before {
     content: "";
     position: fixed;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
     background: url('img/fondo.jpeg') no-repeat center center fixed;
     background-size: cover;
     filter: blur(10px);
@@ -100,7 +101,9 @@ li {
     }
 
     .titulo-imagen {
-        width: 90%;
+        width: 100;
+        max-width: 320;
+        margin-bottom: 20px
     }
 
     p, li {
