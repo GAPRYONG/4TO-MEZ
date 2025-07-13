@@ -108,32 +108,30 @@ li {
 
 /* Responsive para celulares */
 @media screen and (max-width: 480px) {
-    body::before {
-        background-position: center top;
-        background-size: contain;
-    }
-}
+  body::before {
+    background-position: center center;
+    background-size: cover;                                   
+  }
 
-.carta {
+  .carta {
     padding: 20px 15px;
-}
+  }
 
-.titulo-imagen {
+  .titulo-imagen {
     max-width: 100%;
     width: 100%;
-}
+  }
 
-p,
-li {
+  p, li {
     font-size: 1.3em;
-}
+  }
 
-.firmas {
+  .firmas {
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.firmas hr {
+  .firmas hr {
     width: 100px;
-}
+  }
 }
